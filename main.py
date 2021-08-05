@@ -30,6 +30,7 @@ print(f'your order/recipt: {quan} {order}/s, ${menu[order]*quan}, {inorout}, sur
 #DAILY SUMMARY
 
 
+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
 
 
 
