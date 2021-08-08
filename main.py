@@ -45,36 +45,39 @@ while True:
             total = GST + menu[order]*quan
         format_total = '{:.2f}'.format(total)
         format_GST = '{:.2f}'.format(GST)
-        ethan_is_very_cool_give_him_A = print(f'YOUR ORDER/RECIPT: cappuccino/s: {capq}, espresso/s: {espq}, latte/s: {latq}, iced coffee/s: {iceq}, ${menu[order]*quan}, {inorout}, surcharge/extra charge: {surcharge}, $GST: {format_GST}, TOTAL AMOUNT DUE: ${format_total}.\n')
+        print(f'YOUR ORDER/RECIPT: cappuccino/s: {capq}, espresso/s: {espq}, latte/s: {latq}, iced coffee/s: {iceq}, ${menu[order]*quan}, {inorout}, surcharge/extra charge: {surcharge}, $GST: {format_GST}, TOTAL AMOUNT DUE: ${format_total}.\n')
+        ethan_is_very_cool_give_him_A = input('are you happy with your order?')
         more = 'yes'
         orderquan = 0
-        if 'your' in 'ethan_is_very_cool_give_him_A':
-            orderquan = orderquan + 1
+        if ethan_is_very_cool_give_him_A == 'yes':
+            orderquan += 1
         end = input('are we done for the day?')
         if end == 'yes':
             break
     break
-
 
 #DAILY SUMMARY
 
 print('Café au Lait daily summary. \n')
 print('CUPS (OF JOE):\n'
       f'cappuccino/s: {capq}\n'
-      f'expresso/s: {espq}\n' 
+      f'espresso/s: {espq}\n' 
       f'latte/s: {latq}\n' 
       f'iced coffee/s: {iceq}\n' )
 print('DINE IN AND TAKE AWAY:\n'
       f'take away: {taquan}\n'
       f'dine in: {diquan}\n')
 print('NO. OF ORDERS:\n'
-      f'{capq+espq+latq+iceq}\n')
+      f'{orderquan}\n')
 print('GST COLLECTED\n'
-      f'{format_GST}\n')
+      f'${format_GST}\n')
 print('AMOUNT COLLECTED:\n'
-      f'{format_total}\n')
+      f'${format_total}\n')
 
 #THE END
+
+
+
 
 
 
